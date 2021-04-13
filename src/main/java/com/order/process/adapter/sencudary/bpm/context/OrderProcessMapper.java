@@ -9,26 +9,25 @@ import java.util.Map;
 @Component
 class OrderProcessMapper {
 
-    private static final String PRODUCT_ID = "idProduto";
-    private static final String AVAILABLE = "disponivel";
-    private static final String SUCCESS = "sucesso";
-
     Map<String, Object> mapToVariables(OrderProcess orderProcess) {
 
         Map<String, Object> map = new HashMap<>();
-        map.put(PRODUCT_ID, orderProcess.getIdProduct());
-        map.put(AVAILABLE, orderProcess.isInStock());
-        map.put(SUCCESS, orderProcess.isWasNotified());
+        map.put(Variable.PRODUCT_ID.getName(), orderProcess.getIdProduct());
+        map.put(Variable.AVAILABLE.getName(), orderProcess.isInStock());
+        map.put(Variable.SUCCESS.getName(), orderProcess.isWasNotified());
 
         return map;
     }
 
     OrderProcess mapToOrderProcess(String contextId, Map<String, Object> variables) {
 
-        String productId = (String) variables.get(PRODUCT_ID);
-        boolean available = (boolean) variables.get(AVAILABLE);
-        boolean success = (boolean) variables.get(SUCCESS);
+        if ( variables.isEmpty() ) {
+            return null;
+        }
 
+        String productId = (String) variables.get(Variable.PRODUCT_ID.getName());
+        boolean available = (boolean) variables.get(Variable.AVAILABLE.getName());
+        boolean success = (boolean) variables.get(Variable.SUCCESS.getName());
 
         return OrderProcess
                 .builder()

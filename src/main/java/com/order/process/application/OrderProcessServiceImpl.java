@@ -15,6 +15,9 @@ class OrderProcessServiceImpl implements OrderProcessService {
     @NonNull private final ProductRepository productRepository;
     @NonNull private final OrderProcessorStarter startOrderProcessor;
 
+    static class OrderProcessDontExists extends RuntimeException {}
+    static class ProductDontExists extends RuntimeException {}
+
     @Override
     public OrderProcess findOrderProcessById(String id) {
         return orderProcessRepository.findById(id);
@@ -41,8 +44,4 @@ class OrderProcessServiceImpl implements OrderProcessService {
 
         return startOrderProcessor.start(productId);
     }
-
-    public static class OrderProcessDontExists extends RuntimeException {}
-    public static class ProductDontExists extends RuntimeException {}
-
 }

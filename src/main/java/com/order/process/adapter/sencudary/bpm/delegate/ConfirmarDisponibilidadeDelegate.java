@@ -15,14 +15,8 @@ class ConfirmarDisponibilidadeDelegate implements JavaDelegate {
         this.service = orderProcessService;
     }
 
-
     @Override
-    public void execute(DelegateExecution execution) throws Exception {
-
-
-        String id = (String) execution.getVariable("idProduto");
-
-
-        System.out.println(id);
+    public void execute(DelegateExecution execution) throws InterruptedException {
+        service.confirmInStock(execution.getProcessInstanceId());
     }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1ahro7u" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.6.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1ahro7u" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.7.0">
   <bpmn:process id="confirmacao-disponibilidade-produto" name="Confirmação de disponibilidade de produto" isExecutable="true" camunda:versionTag="1.0.0">
     <bpmn:startEvent id="evento-inicio">
       <bpmn:outgoing>Flow_0oq4z09</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:serviceTask id="confirmar-disponibilidade-prod" name="Confirmar disponibilidade do produto em estoque" camunda:delegateExpression="#{confirmarDisponibilidadeDelegate}">
+    <bpmn:serviceTask id="confirmar-disponibilidade-prod" name="Confirmar disponibilidade do produto em estoque" camunda:asyncBefore="true" camunda:delegateExpression="#{confirmarDisponibilidadeDelegate}">
       <bpmn:extensionElements>
         <camunda:inputOutput>
           <camunda:inputParameter name="idProduto">${idProduto}</camunda:inputParameter>
@@ -29,9 +29,6 @@
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_0v8v3vi</bpmn:incoming>
       <bpmn:outgoing>Flow_11jbg1u</bpmn:outgoing>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_00ehl7d">
-        <bpmn:targetRef>database</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0v8v3vi" name="Sim" sourceRef="gtw-disp" targetRef="notificar-disponibilidade">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${disponivel==true}</bpmn:conditionExpression>
@@ -39,7 +36,7 @@
     <bpmn:task id="notificar-indisponibilidade" name="Notificar erro ao confirmar estoque">
       <bpmn:extensionElements>
         <camunda:inputOutput>
-          <camunda:outputParameter name="sucesso">sucesso</camunda:outputParameter>
+          <camunda:outputParameter name="sucesso">${sucesso}</camunda:outputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_0i4cixi</bpmn:incoming>
@@ -124,10 +121,6 @@
           <dc:Bounds x="778" y="209" width="46" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_00ehl7d_di" bpmnElement="DataOutputAssociation_00ehl7d">
-        <di:waypoint x="700" y="178" />
-        <di:waypoint x="775" y="179" />
-      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
