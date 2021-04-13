@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1ahro7u" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.6.0">
+  <bpmn:process id="confirmacao-disponibilidade-produto" name="Confirmação de disponibilidade de produto" isExecutable="true" camunda:versionTag="1.0.0">
+    <bpmn:startEvent id="evento-inicio">
+      <bpmn:outgoing>Flow_0oq4z09</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="confirmar-disponibilidade-prod" name="Confirmar disponibilidade do produto em estoque" camunda:delegateExpression="#{confirmarDisponibilidadeDelegate}">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="idProduto">${idProduto}</camunda:inputParameter>
+          <camunda:outputParameter name="disponivel">${disponivel}</camunda:outputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0oq4z09</bpmn:incoming>
+      <bpmn:outgoing>Flow_0t6qbvk</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0oq4z09" sourceRef="evento-inicio" targetRef="confirmar-disponibilidade-prod" />
+    <bpmn:exclusiveGateway id="gtw-disp" name="Disponível em estoque">
+      <bpmn:incoming>Flow_0t6qbvk</bpmn:incoming>
+      <bpmn:outgoing>Flow_0v8v3vi</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0i4cixi</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_0t6qbvk" sourceRef="confirmar-disponibilidade-prod" targetRef="gtw-disp" />
+    <bpmn:task id="notificar-disponibilidade" name="Notificar que produto está disponível em estoque">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:outputParameter name="sucesso">${sucesso}</camunda:outputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0v8v3vi</bpmn:incoming>
+      <bpmn:outgoing>Flow_11jbg1u</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_00ehl7d">
+        <bpmn:targetRef>database</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0v8v3vi" name="Sim" sourceRef="gtw-disp" targetRef="notificar-disponibilidade">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${disponivel==true}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:task id="notificar-indisponibilidade" name="Notificar erro ao confirmar estoque">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:outputParameter name="sucesso">sucesso</camunda:outputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0i4cixi</bpmn:incoming>
+      <bpmn:outgoing>Flow_15hpoe3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0i4cixi" name="Não" sourceRef="gtw-disp" targetRef="notificar-indisponibilidade">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${disponivel==false}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:endEvent id="confirmacao-event" name="Confirmação">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="sucesso">${sucesso}</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_15hpoe3</bpmn:incoming>
+      <bpmn:incoming>Flow_11jbg1u</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_15hpoe3" sourceRef="notificar-indisponibilidade" targetRef="confirmacao-event" />
+    <bpmn:sequenceFlow id="Flow_11jbg1u" sourceRef="notificar-disponibilidade" targetRef="confirmacao-event" />
+    <bpmn:dataStoreReference id="database" name="database" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="confirmacao-disponibilidade-produto">
+      <bpmndi:BPMNEdge id="Flow_11jbg1u_di" bpmnElement="Flow_11jbg1u">
+        <di:waypoint x="650" y="217" />
+        <di:waypoint x="650" y="450" />
+        <di:waypoint x="508" y="450" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_15hpoe3_di" bpmnElement="Flow_15hpoe3">
+        <di:waypoint x="490" y="350" />
+        <di:waypoint x="490" y="432" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0i4cixi_di" bpmnElement="Flow_0i4cixi">
+        <di:waypoint x="490" y="202" />
+        <di:waypoint x="490" y="270" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="495" y="235" width="21" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0v8v3vi_di" bpmnElement="Flow_0v8v3vi">
+        <di:waypoint x="515" y="177" />
+        <di:waypoint x="600" y="177" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="548" y="159" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0t6qbvk_di" bpmnElement="Flow_0t6qbvk">
+        <di:waypoint x="380" y="177" />
+        <di:waypoint x="465" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0oq4z09_di" bpmnElement="Flow_0oq4z09">
+        <di:waypoint x="195" y="177" />
+        <di:waypoint x="280" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="evento-inicio">
+        <dc:Bounds x="159" y="159" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_09zxjf1_di" bpmnElement="confirmar-disponibilidade-prod">
+        <dc:Bounds x="280" y="137" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0xtpg4v_di" bpmnElement="gtw-disp" isMarkerVisible="true">
+        <dc:Bounds x="465" y="152" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="455" y="115" width="70" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_13ehmrp_di" bpmnElement="notificar-disponibilidade">
+        <dc:Bounds x="600" y="137" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1tyroq2_di" bpmnElement="notificar-indisponibilidade">
+        <dc:Bounds x="440" y="270" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0mkhare_di" bpmnElement="confirmacao-event">
+        <dc:Bounds x="472" y="432" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="459" y="475" width="63" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataStoreReference_1olvsvt_di" bpmnElement="database">
+        <dc:Bounds x="775" y="152" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="778" y="209" width="46" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_00ehl7d_di" bpmnElement="DataOutputAssociation_00ehl7d">
+        <di:waypoint x="700" y="178" />
+        <di:waypoint x="775" y="179" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

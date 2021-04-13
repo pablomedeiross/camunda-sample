@@ -1,0 +1,5 @@
+#
+#Sat Apr 10 16:57:08 BRT 2021
+com.order.process.ControllerInicio=org.springframework.stereotype.Component
+com.order.process.ProcessApplication=org.springframework.stereotype.Component
+com.order.process.delegate.ConfirmarDisponibilidadeDelegate=org.springframework.stereotype.Component

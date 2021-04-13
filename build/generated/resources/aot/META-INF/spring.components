@@ -1,0 +1,10 @@
+#
+#Tue Apr 13 10:01:26 BRT 2021
+com.order.process.adapter.sencudary.http.product.ProductHttpClient=org.springframework.stereotype.Component
+com.order.process.adapter.sencudary.bpm.context.OrderProcessRepositoryImpl=org.springframework.stereotype.Component
+com.order.process.adapter.primary.http.v1.order.OrderProcessController=org.springframework.stereotype.Component
+com.order.process.adapter.sencudary.bpm.delegate.ConfirmarDisponibilidadeDelegate=org.springframework.stereotype.Component
+com.order.process.adapter.sencudary.bpm.context.OrderProcessMapper=org.springframework.stereotype.Component
+com.order.process.adapter.sencudary.bpm.context.OrderProcessorRuntimeStarter=org.springframework.stereotype.Component
+com.order.process.application.OrderProcessServiceImpl=org.springframework.stereotype.Component
+com.order.process.ProcessApplication=org.springframework.stereotype.Component

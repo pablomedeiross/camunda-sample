@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ProcessApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ProcessApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.order.process.html">com.order.process</a> &gt; ProcessApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.539s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldExecuteHappyPath()</td>
+<td class="success">0.539s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:57:11.587 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:57:11.605 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:57:11.687 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.order.process.ProcessApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:57:11.704 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.order.process.ProcessApplicationTests], using SpringBootContextLoader
+16:57:11.711 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.order.process.ProcessApplicationTests]: class path resource [com/order/process/ProcessApplicationTests-context.xml] does not exist
+16:57:11.714 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.order.process.ProcessApplicationTests]: class path resource [com/order/process/ProcessApplicationTestsContext.groovy] does not exist
+16:57:11.715 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.order.process.ProcessApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:57:11.717 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.order.process.ProcessApplicationTests]: ProcessApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:57:11.865 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.order.process.ProcessApplicationTests]
+16:57:11.888 [Test worker] DEBUG org.springframework.context.index.CandidateComponentsIndexLoader - Loaded 1] index(es)
+16:57:11.986 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/pablo/Downloads/process/build/classes/java/main/com/order/process/ProcessApplication.class]
+16:57:11.988 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.order.process.ProcessApplication for test class com.order.process.ProcessApplicationTests
+16:57:12.159 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.order.process.ProcessApplicationTests]: using defaults.
+16:57:12.181 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:57:12.184 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22a5537, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b88709, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@64b6e3b2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3144fd73, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@61978581, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2650d675, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75281a7e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6311decd, org.springframework.test.context.event.EventPublishingTestExecutionListener@3ef7f4a3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1e347e76, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2bfa7c24, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@46703820, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@47239ea1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7ad98ffd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2bad7de]
+16:57:12.190 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@99f13af testClass = ProcessApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4d0935ef testClass = ProcessApplicationTests, locations = '{}', classes = '{class com.order.process.ProcessApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4ed412e, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@56992316, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@146f75d2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1a175df5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1b63e2f6, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2147a17c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@4877feee], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+16:57:12.517 [Test worker] INFO org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+16:57:12.595 [Test worker] INFO org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@665f171e, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@c632dba)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@524e5ab5, clock: SystemClock, configuration: Configuration(false)]
+16:57:12.678 [Test worker] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:57:12.688 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+16:57:12.830 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 429878635.
+16:57:12.834 [Test worker] DEBUG org.camunda.bpm.engine.cfg - ENGINE-12004 Database product name H2
+16:57:12.834 [Test worker] DEBUG org.camunda.bpm.engine.cfg - ENGINE-12005 Database type h2
+16:57:12.834 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 429878635 to pool.
+16:57:17.293 [Test worker] INFO org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+16:57:17.297 [Test worker] INFO org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+16:57:17.331 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- SchemaOperationsProcessEngineBuild ----------------------
+16:57:17.334 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13009 opening new command context
+16:57:17.347 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+16:57:17.347 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 429878635 from pool.
+16:57:17.347 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.351 [Test worker] ERROR org.camunda.bpm.engine.persistence - ENGINE-03015 Problem during schema operation 'drop' with statement '-- 
+-- 
+-- 
+-- 
+alter table ACT_RE_DECISION_DEF 
+drop constraint ACT_FK_DEC_REQ'. Cause: 'Table &quot;ACT_RE_DECISION_DEF&quot; not found; SQL statement:
+-- 
+-- 
+-- 
+-- 
+alter table ACT_RE_DECISION_DEF 
+drop constraint ACT_FK_DEC_REQ [42102-200]'
+16:57:17.355 [Test worker] ERROR org.camunda.bpm.engine.persistence - ENGINE-03015 Problem during schema operation 'drop' with statement 'drop index ACT_IDX_DEC_DEF_TENANT_ID'. Cause: 'Index &quot;ACT_IDX_DEC_DEF_TENANT_ID&quot; not found; SQL statement:
+drop index ACT_IDX_DEC_DEF_TENANT_ID [42112-200]'
+16:57:17.355 [Test worker] ERROR org.camunda.bpm.engine.persistence - ENGINE-03015 Problem during schema operation 'drop' with statement 'drop index ACT_IDX_DEC_DEF_REQ_ID'. Cause: 'Index &quot;ACT_IDX_DEC_DEF_REQ_ID&quot; not found; SQL statement:
+drop index ACT_IDX_DEC_DEF_REQ_ID [42112-200]'
+16:57:17.356 [Test worker] ERROR org.camunda.bpm.engine.persistence - ENGINE-03015 Problem during schema operation 'drop' with statement 'drop index ACT_IDX_DEC_REQ_DEF_TENANT_ID'. Cause: 'Index &quot;ACT_IDX_DEC_REQ_DEF_TENANT_ID&quot; not found; SQL statement:
+drop index ACT_IDX_DEC_REQ_DEF_TENANT_ID [42112-200]'
+16:57:17.358 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+16:57:17.358 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -- 
+-- 
+-- 
+-- 
+alter table ACT_RE_DECISION_DEF 
+drop constraint ACT_FK_DEC_REQ
+  drop index ACT_IDX_DEC_DEF_TENANT_ID
+  drop index ACT_IDX_DEC_DEF_REQ_ID
+  drop index ACT_IDX_DEC_REQ_DEF_TENANT_ID
+  drop table ACT_RE_DECISION_DEF if exists
+  drop table ACT_RE_DECISION_REQ_DEF if exists
+]
+16:57:17.568 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+16:57:17.569 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -- 
+-- 
+-- 
+-- 
+create table ACT_GE_PROPERTY ( 
+NAME_ varchar(64), 
+VALUE_ varchar(300), 
+REV_ integer, 
+primary key (NAME_) 
+)
+  insert into ACT_GE_PROPERTY 
+values ('schema.version', 'fox', 1)
+  insert into ACT_GE_PROPERTY 
+values ('schema.history', 'create(fox)', 1)
+  insert into ACT_GE_PROPERTY 
+values ('next.dbid', '1', 1)
+  insert into ACT_GE_PROPERTY 
+values ('deployment.lock', '0', 1)
+  insert into ACT_GE_PROPERTY 
+values ('history.cleanup.job.lock', '0', 1)
+  insert into ACT_GE_PROPERTY 
+values ('startup.lock', '0', 1)
+  insert into ACT_GE_PROPERTY 
+values ('telemetry.lock', '0', 1)
+  insert into ACT_GE_PROPERTY 
+values ('installationId.lock', '0', 1)
+  create table ACT_GE_BYTEARRAY ( 
+ID_ varchar(64), 
+REV_ integer, 
+NAME_ varchar(255), 
+DEPLOYMENT_ID_ varchar(64), 
+BYTES_ longvarbinary, 
+GENERATED_ bit, 
+TENANT_ID_ varchar(64), 
+TYPE_ integer, 
+CREATE_TIME_ timestamp, 
+ROOT_PROC_INST_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_GE_SCHEMA_LOG ( 
+ID_ varchar(64), 
+TIMESTAMP_ timestamp, 
+VERSION_ varchar(255), 
+primary key (ID_) 
+)
+  insert into ACT_GE_SCHEMA_LOG 
+values ('0', CURRENT_TIMESTAMP, '7.15.0')
+  create table ACT_RE_DEPLOYMENT ( 
+ID_ varchar(64), 
+NAME_ varchar(255), 
+DEPLOY_TIME_ timestamp, 
+SOURCE_ varchar(255), 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_EXECUTION ( 
+ID_ varchar(64), 
+REV_ integer, 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+BUSINESS_KEY_ varchar(255), 
+PARENT_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+SUPER_EXEC_ varchar(64), 
+SUPER_CASE_EXEC_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+ACT_INST_ID_ varchar(64), 
+ACT_ID_ varchar(255), 
+IS_ACTIVE_ bit, 
+IS_CONCURRENT_ bit, 
+IS_SCOPE_ bit, 
+IS_EVENT_SCOPE_ bit, 
+SUSPENSION_STATE_ integer, 
+CACHED_ENT_STATE_ integer, 
+SEQUENCE_COUNTER_ integer, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_JOB ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+TYPE_ varchar(255) NOT NULL, 
+LOCK_EXP_TIME_ timestamp, 
+LOCK_OWNER_ varchar(255), 
+EXCLUSIVE_ boolean, 
+EXECUTION_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROCESS_DEF_ID_ varchar(64), 
+PROCESS_DEF_KEY_ varchar(255), 
+RETRIES_ integer, 
+EXCEPTION_STACK_ID_ varchar(64), 
+EXCEPTION_MSG_ varchar(4000), 
+FAILED_ACT_ID_ varchar(255), 
+DUEDATE_ timestamp, 
+REPEAT_ varchar(255), 
+REPEAT_OFFSET_ bigint DEFAULT 0, 
+HANDLER_TYPE_ varchar(255), 
+HANDLER_CFG_ varchar(4000), 
+DEPLOYMENT_ID_ varchar(64), 
+SUSPENSION_STATE_ integer NOT NULL DEFAULT 1, 
+JOB_DEF_ID_ varchar(64), 
+PRIORITY_ bigint NOT NULL DEFAULT 0, 
+SEQUENCE_COUNTER_ integer, 
+TENANT_ID_ varchar(64), 
+CREATE_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_RU_JOBDEF ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+PROC_DEF_ID_ varchar(64), 
+PROC_DEF_KEY_ varchar(255), 
+ACT_ID_ varchar(255), 
+JOB_TYPE_ varchar(255) NOT NULL, 
+JOB_CONFIGURATION_ varchar(255), 
+SUSPENSION_STATE_ integer, 
+JOB_PRIORITY_ bigint, 
+TENANT_ID_ varchar(64), 
+DEPLOYMENT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RE_PROCDEF ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+CATEGORY_ varchar(255), 
+NAME_ varchar(255), 
+KEY_ varchar(255) NOT NULL, 
+VERSION_ integer NOT NULL, 
+DEPLOYMENT_ID_ varchar(64), 
+RESOURCE_NAME_ varchar(4000), 
+DGRM_RESOURCE_NAME_ varchar(4000), 
+HAS_START_FORM_KEY_ bit, 
+SUSPENSION_STATE_ integer, 
+TENANT_ID_ varchar(64), 
+VERSION_TAG_ varchar(64), 
+HISTORY_TTL_ integer, 
+STARTABLE_ boolean NOT NULL default TRUE, 
+primary key (ID_) 
+)
+  create table ACT_RU_TASK ( 
+ID_ varchar(64), 
+REV_ integer, 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+CASE_EXECUTION_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+CASE_DEF_ID_ varchar(64), 
+NAME_ varchar(255), 
+PARENT_TASK_ID_ varchar(64), 
+DESCRIPTION_ varchar(4000), 
+TASK_DEF_KEY_ varchar(255), 
+OWNER_ varchar(255), 
+ASSIGNEE_ varchar(255), 
+DELEGATION_ varchar(64), 
+PRIORITY_ integer, 
+CREATE_TIME_ timestamp, 
+DUE_DATE_ timestamp, 
+FOLLOW_UP_DATE_ timestamp, 
+SUSPENSION_STATE_ integer, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_IDENTITYLINK ( 
+ID_ varchar(64), 
+REV_ integer, 
+GROUP_ID_ varchar(255), 
+TYPE_ varchar(255), 
+USER_ID_ varchar(255), 
+TASK_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_VARIABLE ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+TYPE_ varchar(255) not null, 
+NAME_ varchar(255) not null, 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+CASE_EXECUTION_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+BATCH_ID_ varchar(64), 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+VAR_SCOPE_ varchar(64) not null, 
+SEQUENCE_COUNTER_ integer, 
+IS_CONCURRENT_LOCAL_ bit, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_EVENT_SUBSCR ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+EVENT_TYPE_ varchar(255) not null, 
+EVENT_NAME_ varchar(255), 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+ACTIVITY_ID_ varchar(255), 
+CONFIGURATION_ varchar(255), 
+CREATED_ timestamp not null, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_INCIDENT ( 
+ID_ varchar(64) not null, 
+REV_ integer not null, 
+INCIDENT_TIMESTAMP_ timestamp not null, 
+INCIDENT_MSG_ varchar(4000), 
+INCIDENT_TYPE_ varchar(255) not null, 
+EXECUTION_ID_ varchar(64), 
+ACTIVITY_ID_ varchar(255), 
+FAILED_ACTIVITY_ID_ varchar(255), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+CAUSE_INCIDENT_ID_ varchar(64), 
+ROOT_CAUSE_INCIDENT_ID_ varchar(64), 
+CONFIGURATION_ varchar(255), 
+TENANT_ID_ varchar(64), 
+JOB_DEF_ID_ varchar(64), 
+ANNOTATION_ varchar(4000), 
+primary key (ID_) 
+)
+  create table ACT_RU_AUTHORIZATION ( 
+ID_ varchar(64) not null, 
+REV_ integer not null, 
+TYPE_ integer not null, 
+GROUP_ID_ varchar(255), 
+USER_ID_ varchar(255), 
+RESOURCE_TYPE_ integer not null, 
+RESOURCE_ID_ varchar(255), 
+PERMS_ integer, 
+REMOVAL_TIME_ timestamp, 
+ROOT_PROC_INST_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_RU_FILTER ( 
+ID_ varchar(64) not null, 
+REV_ integer not null, 
+RESOURCE_TYPE_ varchar(255) not null, 
+NAME_ varchar(255) not null, 
+OWNER_ varchar(255), 
+QUERY_ CLOB not null, 
+PROPERTIES_ CLOB, 
+primary key (ID_) 
+)
+  create table ACT_RU_METER_LOG ( 
+ID_ varchar(64) not null, 
+NAME_ varchar(64) not null, 
+REPORTER_ varchar(255), 
+VALUE_ long, 
+TIMESTAMP_ timestamp, 
+MILLISECONDS_ bigint DEFAULT 0, 
+primary key (ID_) 
+)
+  create table ACT_RU_TASK_METER_LOG ( 
+ID_ varchar(64) not null, 
+ASSIGNEE_HASH_ long, 
+TIMESTAMP_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_RU_EXT_TASK ( 
+ID_ varchar(64) not null, 
+REV_ integer not null, 
+WORKER_ID_ varchar(255), 
+TOPIC_NAME_ varchar(255), 
+RETRIES_ integer, 
+ERROR_MSG_ varchar(4000), 
+ERROR_DETAILS_ID_ varchar(64), 
+LOCK_EXP_TIME_ timestamp, 
+SUSPENSION_STATE_ integer, 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+PROC_DEF_KEY_ varchar(255), 
+ACT_ID_ varchar(255), 
+ACT_INST_ID_ varchar(64), 
+TENANT_ID_ varchar(64), 
+PRIORITY_ bigint NOT NULL DEFAULT 0, 
+primary key (ID_) 
+)
+  create table ACT_RU_BATCH ( 
+ID_ varchar(64) not null, 
+REV_ integer not null, 
+TYPE_ varchar(255), 
+TOTAL_JOBS_ integer, 
+JOBS_CREATED_ integer, 
+JOBS_PER_SEED_ integer, 
+INVOCATIONS_PER_JOB_ integer, 
+SEED_JOB_DEF_ID_ varchar(64), 
+BATCH_JOB_DEF_ID_ varchar(64), 
+MONITOR_JOB_DEF_ID_ varchar(64), 
+SUSPENSION_STATE_ integer, 
+CONFIGURATION_ varchar(255), 
+TENANT_ID_ varchar(64), 
+CREATE_USER_ID_ varchar(255), 
+primary key (ID_) 
+)
+  create index ACT_IDX_EXEC_ROOT_PI on ACT_RU_EXECUTION(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_EXEC_BUSKEY on ACT_RU_EXECUTION(BUSINESS_KEY_)
+  create index ACT_IDX_EXEC_TENANT_ID on ACT_RU_EXECUTION(TENANT_ID_)
+  create index ACT_IDX_TASK_CREATE on ACT_RU_TASK(CREATE_TIME_)
+  create index ACT_IDX_TASK_ASSIGNEE on ACT_RU_TASK(ASSIGNEE_)
+  create index ACT_IDX_TASK_OWNER on ACT_RU_TASK(OWNER_)
+  create index ACT_IDX_TASK_TENANT_ID on ACT_RU_TASK(TENANT_ID_)
+  create index ACT_IDX_IDENT_LNK_USER on ACT_RU_IDENTITYLINK(USER_ID_)
+  create index ACT_IDX_IDENT_LNK_GROUP on ACT_RU_IDENTITYLINK(GROUP_ID_)
+  create index ACT_IDX_EVENT_SUBSCR_CONFIG_ on ACT_RU_EVENT_SUBSCR(CONFIGURATION_)
+  create index ACT_IDX_EVENT_SUBSCR_TENANT_ID on ACT_RU_EVENT_SUBSCR(TENANT_ID_)
+  create index ACT_IDX_VARIABLE_TASK_ID on ACT_RU_VARIABLE(TASK_ID_)
+  create index ACT_IDX_VARIABLE_TENANT_ID on ACT_RU_VARIABLE(TENANT_ID_)
+  create index ACT_IDX_VARIABLE_TASK_NAME_TYPE on ACT_RU_VARIABLE(TASK_ID_, NAME_, TYPE_)
+  create index ACT_IDX_ATHRZ_PROCEDEF on ACT_RU_IDENTITYLINK(PROC_DEF_ID_)
+  create index ACT_IDX_INC_CONFIGURATION on ACT_RU_INCIDENT(CONFIGURATION_)
+  create index ACT_IDX_INC_TENANT_ID on ACT_RU_INCIDENT(TENANT_ID_)
+  CAM-5914
+  create index ACT_IDX_JOB_EXECUTION_ID on ACT_RU_JOB(EXECUTION_ID_)
+  create index ACT_IDX_JOB_HANDLER on ACT_RU_JOB(HANDLER_TYPE_,HANDLER_CFG_)
+  create index ACT_IDX_JOB_PROCINST on ACT_RU_JOB(PROCESS_INSTANCE_ID_)
+  create index ACT_IDX_JOB_TENANT_ID on ACT_RU_JOB(TENANT_ID_)
+  create index ACT_IDX_JOBDEF_TENANT_ID on ACT_RU_JOBDEF(TENANT_ID_)
+  new metric milliseconds column
+  CREATE INDEX ACT_IDX_METER_LOG_MS ON ACT_RU_METER_LOG(MILLISECONDS_)
+  CREATE INDEX ACT_IDX_METER_LOG_NAME_MS ON ACT_RU_METER_LOG(NAME_, MILLISECONDS_)
+  CREATE INDEX ACT_IDX_METER_LOG_REPORT ON ACT_RU_METER_LOG(NAME_, REPORTER_, MILLISECONDS_)
+  old metric timestamp column
+  CREATE INDEX ACT_IDX_METER_LOG_TIME ON ACT_RU_METER_LOG(TIMESTAMP_)
+  CREATE INDEX ACT_IDX_METER_LOG ON ACT_RU_METER_LOG(NAME_, TIMESTAMP_)
+  task metric timestamp column
+  CREATE INDEX ACT_IDX_TASK_METER_LOG_TIME ON ACT_RU_TASK_METER_LOG(TIMESTAMP_)
+  create index ACT_IDX_EXT_TASK_TOPIC ON ACT_RU_EXT_TASK(TOPIC_NAME_)
+  create index ACT_IDX_EXT_TASK_TENANT_ID ON ACT_RU_EXT_TASK(TENANT_ID_)
+  create index ACT_IDX_EXT_TASK_PRIORITY ON ACT_RU_EXT_TASK(PRIORITY_)
+  create index ACT_IDX_EXT_TASK_ERR_DETAILS ON ACT_RU_EXT_TASK(ERROR_DETAILS_ID_)
+  create index ACT_IDX_AUTH_GROUP_ID ON ACT_RU_AUTHORIZATION(GROUP_ID_)
+  create index ACT_IDX_JOB_JOB_DEF_ID on ACT_RU_JOB(JOB_DEF_ID_)
+  indexes for deadlock problems - https://app.camunda.com/jira/browse/CAM-2567 --
+  create index ACT_IDX_INC_CAUSEINCID on ACT_RU_INCIDENT(CAUSE_INCIDENT_ID_)
+  create index ACT_IDX_INC_EXID on ACT_RU_INCIDENT(EXECUTION_ID_)
+  create index ACT_IDX_INC_PROCDEFID on ACT_RU_INCIDENT(PROC_DEF_ID_)
+  create index ACT_IDX_INC_PROCINSTID on ACT_RU_INCIDENT(PROC_INST_ID_)
+  create index ACT_IDX_INC_ROOTCAUSEINCID on ACT_RU_INCIDENT(ROOT_CAUSE_INCIDENT_ID_)
+  index for deadlock problem - https://app.camunda.com/jira/browse/CAM-4440 --
+  create index ACT_IDX_AUTH_RESOURCE_ID on ACT_RU_AUTHORIZATION(RESOURCE_ID_)
+  index to prevent deadlock on fk constraint - https://app.camunda.com/jira/browse/CAM-5440 --
+  create index ACT_IDX_EXT_TASK_EXEC on ACT_RU_EXT_TASK(EXECUTION_ID_)
+  indexes to improve deployment
+  create index ACT_IDX_BYTEARRAY_ROOT_PI on ACT_GE_BYTEARRAY(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_BYTEARRAY_RM_TIME on ACT_GE_BYTEARRAY(REMOVAL_TIME_)
+  create index ACT_IDX_BYTEARRAY_NAME on ACT_GE_BYTEARRAY(NAME_)
+  create index ACT_IDX_DEPLOYMENT_NAME on ACT_RE_DEPLOYMENT(NAME_)
+  create index ACT_IDX_DEPLOYMENT_TENANT_ID on ACT_RE_DEPLOYMENT(TENANT_ID_)
+  create index ACT_IDX_JOBDEF_PROC_DEF_ID ON ACT_RU_JOBDEF(PROC_DEF_ID_)
+  create index ACT_IDX_JOB_HANDLER_TYPE ON ACT_RU_JOB(HANDLER_TYPE_)
+  create index ACT_IDX_EVENT_SUBSCR_EVT_NAME ON ACT_RU_EVENT_SUBSCR(EVENT_NAME_)
+  create index ACT_IDX_PROCDEF_DEPLOYMENT_ID ON ACT_RE_PROCDEF(DEPLOYMENT_ID_)
+  create index ACT_IDX_PROCDEF_TENANT_ID ON ACT_RE_PROCDEF(TENANT_ID_)
+  create index ACT_IDX_PROCDEF_VER_TAG ON ACT_RE_PROCDEF(VERSION_TAG_)
+  alter table ACT_GE_BYTEARRAY 
+add constraint ACT_FK_BYTEARR_DEPL 
+foreign key (DEPLOYMENT_ID_) 
+references ACT_RE_DEPLOYMENT
+  alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_PARENT 
+foreign key (PARENT_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_SUPER 
+foreign key (SUPER_EXEC_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_PROCDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)
+  alter table ACT_RU_IDENTITYLINK 
+add constraint ACT_FK_TSKASS_TASK 
+foreign key (TASK_ID_) 
+references ACT_RU_TASK
+  alter table ACT_RU_IDENTITYLINK 
+add constraint ACT_FK_ATHRZ_PROCEDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF
+  alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_EXE 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_PROCDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_EXE 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_BYTEARRAY 
+foreign key (BYTEARRAY_ID_) 
+references ACT_GE_BYTEARRAY
+  alter table ACT_RU_JOB 
+add constraint ACT_FK_JOB_EXCEPTION 
+foreign key (EXCEPTION_STACK_ID_) 
+references ACT_GE_BYTEARRAY
+  alter table ACT_RU_EVENT_SUBSCR 
+add constraint ACT_FK_EVENT_EXEC 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION
+  alter table ACT_RU_INCIDENT 
+add constraint ACT_FK_INC_EXE 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)
+  alter table ACT_RU_INCIDENT 
+add constraint ACT_FK_INC_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION (ID_)
+  alter table ACT_RU_INCIDENT 
+add constraint ACT_FK_INC_PROCDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)
+  alter table ACT_RU_INCIDENT 
+add constraint ACT_FK_INC_CAUSE 
+foreign key (CAUSE_INCIDENT_ID_) 
+references ACT_RU_INCIDENT (ID_)
+  alter table ACT_RU_INCIDENT 
+add constraint ACT_FK_INC_RCAUSE 
+foreign key (ROOT_CAUSE_INCIDENT_ID_) 
+references ACT_RU_INCIDENT (ID_)
+  alter table ACT_RU_EXT_TASK 
+add constraint ACT_FK_EXT_TASK_ERROR_DETAILS 
+foreign key (ERROR_DETAILS_ID_) 
+references ACT_GE_BYTEARRAY (ID_)
+  create index ACT_IDX_INC_JOB_DEF on ACT_RU_INCIDENT(JOB_DEF_ID_)
+  alter table ACT_RU_INCIDENT 
+add constraint ACT_FK_INC_JOB_DEF 
+foreign key (JOB_DEF_ID_) 
+references ACT_RU_JOBDEF (ID_)
+  alter table ACT_RU_AUTHORIZATION 
+add constraint ACT_UNIQ_AUTH_USER 
+unique (TYPE_, USER_ID_,RESOURCE_TYPE_,RESOURCE_ID_)
+  alter table ACT_RU_AUTHORIZATION 
+add constraint ACT_UNIQ_AUTH_GROUP 
+unique (TYPE_, GROUP_ID_,RESOURCE_TYPE_,RESOURCE_ID_)
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_UNIQ_VARIABLE 
+unique (VAR_SCOPE_, NAME_)
+  alter table ACT_RU_EXT_TASK 
+add constraint ACT_FK_EXT_TASK_EXE 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)
+  create index ACT_IDX_BATCH_SEED_JOB_DEF ON ACT_RU_BATCH(SEED_JOB_DEF_ID_)
+  alter table ACT_RU_BATCH 
+add constraint ACT_FK_BATCH_SEED_JOB_DEF 
+foreign key (SEED_JOB_DEF_ID_) 
+references ACT_RU_JOBDEF (ID_)
+  create index ACT_IDX_BATCH_MONITOR_JOB_DEF ON ACT_RU_BATCH(MONITOR_JOB_DEF_ID_)
+  alter table ACT_RU_BATCH 
+add constraint ACT_FK_BATCH_MONITOR_JOB_DEF 
+foreign key (MONITOR_JOB_DEF_ID_) 
+references ACT_RU_JOBDEF (ID_)
+  create index ACT_IDX_BATCH_JOB_DEF ON ACT_RU_BATCH(BATCH_JOB_DEF_ID_)
+  alter table ACT_RU_BATCH 
+add constraint ACT_FK_BATCH_JOB_DEF 
+foreign key (BATCH_JOB_DEF_ID_) 
+references ACT_RU_JOBDEF (ID_)
+  create index ACT_IDX_BATCH_ID ON ACT_RU_VARIABLE(BATCH_ID_)
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_BATCH 
+foreign key (BATCH_ID_) 
+references ACT_RU_BATCH (ID_)
+  indices for history cleanup: https://jira.camunda.com/browse/CAM-11616
+  create index ACT_IDX_AUTH_ROOT_PI on ACT_RU_AUTHORIZATION(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_AUTH_RM_TIME on ACT_RU_AUTHORIZATION(REMOVAL_TIME_)
+]
+16:57:17.577 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'engine' for component '{}' was successful. create
+16:57:17.708 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+16:57:17.709 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -- 
+-- 
+-- 
+-- 
+create table ACT_HI_PROCINST ( 
+ID_ varchar(64) not null, 
+PROC_INST_ID_ varchar(64) not null, 
+BUSINESS_KEY_ varchar(255), 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64) not null, 
+START_TIME_ timestamp not null, 
+END_TIME_ timestamp, 
+REMOVAL_TIME_ timestamp, 
+DURATION_ bigint, 
+START_USER_ID_ varchar(255), 
+START_ACT_ID_ varchar(255), 
+END_ACT_ID_ varchar(255), 
+SUPER_PROCESS_INSTANCE_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+SUPER_CASE_INSTANCE_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+DELETE_REASON_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+STATE_ varchar(255), 
+primary key (ID_), 
+unique (PROC_INST_ID_) 
+)
+  create table ACT_HI_ACTINST ( 
+ID_ varchar(64) not null, 
+PARENT_ACT_INST_ID_ varchar(64), 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64) not null, 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64) not null, 
+EXECUTION_ID_ varchar(64) not null, 
+ACT_ID_ varchar(255) not null, 
+TASK_ID_ varchar(64), 
+CALL_PROC_INST_ID_ varchar(64), 
+CALL_CASE_INST_ID_ varchar(64), 
+ACT_NAME_ varchar(255), 
+ACT_TYPE_ varchar(255) not null, 
+ASSIGNEE_ varchar(255), 
+START_TIME_ timestamp not null, 
+END_TIME_ timestamp, 
+DURATION_ bigint, 
+ACT_INST_STATE_ integer, 
+SEQUENCE_COUNTER_ integer, 
+TENANT_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_TASKINST ( 
+ID_ varchar(64) not null, 
+TASK_DEF_KEY_ varchar(255), 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+CASE_DEF_KEY_ varchar(255), 
+CASE_DEF_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+CASE_EXECUTION_ID_ varchar(64), 
+ACT_INST_ID_ varchar(64), 
+NAME_ varchar(255), 
+PARENT_TASK_ID_ varchar(64), 
+DESCRIPTION_ varchar(4000), 
+OWNER_ varchar(255), 
+ASSIGNEE_ varchar(255), 
+START_TIME_ timestamp not null, 
+END_TIME_ timestamp, 
+DURATION_ bigint, 
+DELETE_REASON_ varchar(4000), 
+PRIORITY_ integer, 
+DUE_DATE_ timestamp, 
+FOLLOW_UP_DATE_ timestamp, 
+TENANT_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_VARINST ( 
+ID_ varchar(64) not null, 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+CASE_DEF_KEY_ varchar(255), 
+CASE_DEF_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+CASE_EXECUTION_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+ACT_INST_ID_ varchar(64), 
+NAME_ varchar(255) not null, 
+VAR_TYPE_ varchar(100), 
+CREATE_TIME_ timestamp, 
+REV_ integer, 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+STATE_ varchar(20), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_DETAIL ( 
+ID_ varchar(64) not null, 
+TYPE_ varchar(255) not null, 
+TIME_ timestamp not null, 
+NAME_ varchar(255) NOT null, 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+CASE_DEF_KEY_ varchar(255), 
+CASE_DEF_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+CASE_EXECUTION_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+ACT_INST_ID_ varchar(64), 
+VAR_INST_ID_ varchar(64), 
+VAR_TYPE_ varchar(255), 
+REV_ integer, 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+SEQUENCE_COUNTER_ integer, 
+TENANT_ID_ varchar(64), 
+OPERATION_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+INITIAL_ boolean, 
+primary key (ID_) 
+)
+  create table ACT_HI_IDENTITYLINK ( 
+ID_ varchar(64) not null, 
+TIMESTAMP_ timestamp not null, 
+TYPE_ varchar(255), 
+USER_ID_ varchar(255), 
+GROUP_ID_ varchar(255), 
+TASK_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+OPERATION_TYPE_ varchar(64), 
+ASSIGNER_ID_ varchar(64), 
+PROC_DEF_KEY_ varchar(255), 
+TENANT_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_COMMENT ( 
+ID_ varchar(64) not null, 
+TYPE_ varchar(255), 
+TIME_ timestamp not null, 
+USER_ID_ varchar(255), 
+TASK_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+ACTION_ varchar(255), 
+MESSAGE_ varchar(4000), 
+FULL_MSG_ longvarbinary, 
+TENANT_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_ATTACHMENT ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+USER_ID_ varchar(255), 
+NAME_ varchar(255), 
+DESCRIPTION_ varchar(4000), 
+TYPE_ varchar(255), 
+TASK_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+URL_ varchar(4000), 
+CONTENT_ID_ varchar(64), 
+TENANT_ID_ varchar(64), 
+CREATE_TIME_ timestamp, 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_OP_LOG ( 
+ID_ varchar(64) not null, 
+DEPLOYMENT_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+PROC_DEF_KEY_ varchar(255), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+CASE_DEF_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+CASE_EXECUTION_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+JOB_ID_ varchar(64), 
+JOB_DEF_ID_ varchar(64), 
+BATCH_ID_ varchar(64), 
+USER_ID_ varchar(255), 
+TIMESTAMP_ timestamp not null, 
+OPERATION_TYPE_ varchar(64), 
+OPERATION_ID_ varchar(64), 
+ENTITY_TYPE_ varchar(30), 
+PROPERTY_ varchar(64), 
+ORG_VALUE_ varchar(4000), 
+NEW_VALUE_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+CATEGORY_ varchar(64), 
+EXTERNAL_TASK_ID_ varchar(64), 
+ANNOTATION_ varchar(4000), 
+primary key (ID_) 
+)
+  create table ACT_HI_INCIDENT ( 
+ID_ varchar(64) not null, 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+CREATE_TIME_ timestamp not null, 
+END_TIME_ timestamp, 
+INCIDENT_MSG_ varchar(4000), 
+INCIDENT_TYPE_ varchar(255) not null, 
+ACTIVITY_ID_ varchar(255), 
+FAILED_ACTIVITY_ID_ varchar(255), 
+CAUSE_INCIDENT_ID_ varchar(64), 
+ROOT_CAUSE_INCIDENT_ID_ varchar(64), 
+CONFIGURATION_ varchar(255), 
+HISTORY_CONFIGURATION_ varchar(255), 
+INCIDENT_STATE_ integer, 
+TENANT_ID_ varchar(64), 
+JOB_DEF_ID_ varchar(64), 
+ANNOTATION_ varchar(4000), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_JOB_LOG ( 
+ID_ varchar(64) not null, 
+TIMESTAMP_ timestamp not null, 
+JOB_ID_ varchar(64) not null, 
+JOB_DUEDATE_ timestamp, 
+JOB_RETRIES_ integer, 
+JOB_PRIORITY_ bigint not null default 0, 
+JOB_EXCEPTION_MSG_ varchar(4000), 
+JOB_EXCEPTION_STACK_ID_ varchar(64), 
+JOB_STATE_ integer, 
+JOB_DEF_ID_ varchar(64), 
+JOB_DEF_TYPE_ varchar(255), 
+JOB_DEF_CONFIGURATION_ varchar(255), 
+ACT_ID_ varchar(255), 
+FAILED_ACT_ID_ varchar(255), 
+EXECUTION_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROCESS_DEF_ID_ varchar(64), 
+PROCESS_DEF_KEY_ varchar(255), 
+DEPLOYMENT_ID_ varchar(64), 
+SEQUENCE_COUNTER_ integer, 
+TENANT_ID_ varchar(64), 
+HOSTNAME_ varchar(255), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_BATCH ( 
+ID_ varchar(64) not null, 
+TYPE_ varchar(255), 
+TOTAL_JOBS_ integer, 
+JOBS_PER_SEED_ integer, 
+INVOCATIONS_PER_JOB_ integer, 
+SEED_JOB_DEF_ID_ varchar(64), 
+MONITOR_JOB_DEF_ID_ varchar(64), 
+BATCH_JOB_DEF_ID_ varchar(64), 
+TENANT_ID_  varchar(64), 
+CREATE_USER_ID_ varchar(255), 
+START_TIME_ timestamp not null, 
+END_TIME_ timestamp, 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create table ACT_HI_EXT_TASK_LOG ( 
+ID_ varchar(64) not null, 
+TIMESTAMP_ timestamp not null, 
+EXT_TASK_ID_ varchar(64) not null, 
+RETRIES_ integer, 
+TOPIC_NAME_ varchar(255), 
+WORKER_ID_ varchar(255), 
+PRIORITY_ bigint not null default 0, 
+ERROR_MSG_ varchar(4000), 
+ERROR_DETAILS_ID_ varchar(64), 
+ACT_ID_ varchar(255), 
+ACT_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+PROC_DEF_KEY_ varchar(255), 
+TENANT_ID_ varchar(64), 
+STATE_ integer, 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create index ACT_IDX_HI_PRO_INST_END on ACT_HI_PROCINST(END_TIME_)
+  create index ACT_IDX_HI_PRO_I_BUSKEY on ACT_HI_PROCINST(BUSINESS_KEY_)
+  create index ACT_IDX_HI_PRO_INST_TENANT_ID on ACT_HI_PROCINST(TENANT_ID_)
+  create index ACT_IDX_HI_PRO_INST_PROC_DEF_KEY on ACT_HI_PROCINST(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_PRO_INST_PROC_TIME on ACT_HI_PROCINST(START_TIME_, END_TIME_)
+  create index ACT_IDX_HI_PI_PDEFID_END_TIME on ACT_HI_PROCINST(PROC_DEF_ID_, END_TIME_)
+  create index ACT_IDX_HI_PRO_INST_ROOT_PI on ACT_HI_PROCINST(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_PRO_INST_RM_TIME on ACT_HI_PROCINST(REMOVAL_TIME_)
+  create index ACT_IDX_HI_ACTINST_ROOT_PI on ACT_HI_ACTINST(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_ACT_INST_START_END on ACT_HI_ACTINST(START_TIME_, END_TIME_)
+  create index ACT_IDX_HI_ACT_INST_END on ACT_HI_ACTINST(END_TIME_)
+  create index ACT_IDX_HI_ACT_INST_PROCINST on ACT_HI_ACTINST(PROC_INST_ID_, ACT_ID_)
+  create index ACT_IDX_HI_ACT_INST_COMP on ACT_HI_ACTINST(EXECUTION_ID_, ACT_ID_, END_TIME_, ID_)
+  create index ACT_IDX_HI_ACT_INST_STATS on ACT_HI_ACTINST(PROC_DEF_ID_, PROC_INST_ID_, ACT_ID_, END_TIME_, ACT_INST_STATE_)
+  create index ACT_IDX_HI_ACT_INST_TENANT_ID on ACT_HI_ACTINST(TENANT_ID_)
+  create index ACT_IDX_HI_ACT_INST_PROC_DEF_KEY on ACT_HI_ACTINST(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_AI_PDEFID_END_TIME on ACT_HI_ACTINST(PROC_DEF_ID_, END_TIME_)
+  create index ACT_IDX_HI_ACT_INST_RM_TIME on ACT_HI_ACTINST(REMOVAL_TIME_)
+  create index ACT_IDX_HI_DETAIL_ROOT_PI on ACT_HI_DETAIL(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_DETAIL_PROC_INST on ACT_HI_DETAIL(PROC_INST_ID_)
+  create index ACT_IDX_HI_DETAIL_ACT_INST on ACT_HI_DETAIL(ACT_INST_ID_)
+  create index ACT_IDX_HI_DETAIL_CASE_INST on ACT_HI_DETAIL(CASE_INST_ID_)
+  create index ACT_IDX_HI_DETAIL_CASE_EXEC on ACT_HI_DETAIL(CASE_EXECUTION_ID_)
+  create index ACT_IDX_HI_DETAIL_TIME on ACT_HI_DETAIL(TIME_)
+  create index ACT_IDX_HI_DETAIL_NAME on ACT_HI_DETAIL(NAME_)
+  create index ACT_IDX_HI_DETAIL_TASK_ID on ACT_HI_DETAIL(TASK_ID_)
+  create index ACT_IDX_HI_DETAIL_TENANT_ID on ACT_HI_DETAIL(TENANT_ID_)
+  create index ACT_IDX_HI_DETAIL_PROC_DEF_KEY on ACT_HI_DETAIL(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_DETAIL_BYTEAR on ACT_HI_DETAIL(BYTEARRAY_ID_)
+  create index ACT_IDX_HI_DETAIL_RM_TIME on ACT_HI_DETAIL(REMOVAL_TIME_)
+  create index ACT_IDX_HI_DETAIL_TASK_BYTEAR on ACT_HI_DETAIL(BYTEARRAY_ID_, TASK_ID_)
+  create index ACT_IDX_HI_DETAIL_VAR_INST_ID on ACT_HI_DETAIL(VAR_INST_ID_)
+  create index ACT_IDX_HI_IDENT_LNK_ROOT_PI on ACT_HI_IDENTITYLINK(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_IDENT_LNK_USER on ACT_HI_IDENTITYLINK(USER_ID_)
+  create index ACT_IDX_HI_IDENT_LNK_TENANT_ID on ACT_HI_IDENTITYLINK(TENANT_ID_)
+  create index ACT_IDX_HI_IDENT_LNK_GROUP on ACT_HI_IDENTITYLINK(GROUP_ID_)
+  create index ACT_IDX_HI_IDENT_LNK_PROC_DEF_KEY on ACT_HI_IDENTITYLINK(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_IDENT_LINK_TASK on ACT_HI_IDENTITYLINK(TASK_ID_)
+  create index ACT_IDX_HI_IDENT_LINK_RM_TIME on ACT_HI_IDENTITYLINK(REMOVAL_TIME_)
+  create index ACT_IDX_HI_IDENT_LNK_TIMESTAMP on ACT_HI_IDENTITYLINK(TIMESTAMP_)
+  create index ACT_IDX_HI_TASKINST_ROOT_PI on ACT_HI_TASKINST(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_TASK_INST_TENANT_ID on ACT_HI_TASKINST(TENANT_ID_)
+  create index ACT_IDX_HI_TASK_INST_PROC_DEF_KEY on ACT_HI_TASKINST(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_TASKINST_PROCINST on ACT_HI_TASKINST(PROC_INST_ID_)
+  create index ACT_IDX_HI_TASKINSTID_PROCINST on ACT_HI_TASKINST(ID_,PROC_INST_ID_)
+  create index ACT_IDX_HI_TASK_INST_RM_TIME on ACT_HI_TASKINST(REMOVAL_TIME_)
+  create index ACT_IDX_HI_TASK_INST_START on ACT_HI_TASKINST(START_TIME_)
+  create index ACT_IDX_HI_TASK_INST_END on ACT_HI_TASKINST(END_TIME_)
+  create index ACT_IDX_HI_VARINST_ROOT_PI on ACT_HI_VARINST(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_PROCVAR_PROC_INST on ACT_HI_VARINST(PROC_INST_ID_)
+  create index ACT_IDX_HI_PROCVAR_NAME_TYPE on ACT_HI_VARINST(NAME_, VAR_TYPE_)
+  create index ACT_IDX_HI_CASEVAR_CASE_INST on ACT_HI_VARINST(CASE_INST_ID_)
+  create index ACT_IDX_HI_VAR_INST_TENANT_ID on ACT_HI_VARINST(TENANT_ID_)
+  create index ACT_IDX_HI_VAR_INST_PROC_DEF_KEY on ACT_HI_VARINST(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_VARINST_BYTEAR on ACT_HI_VARINST(BYTEARRAY_ID_)
+  create index ACT_IDX_HI_VARINST_RM_TIME on ACT_HI_VARINST(REMOVAL_TIME_)
+  create index ACT_IDX_HI_VAR_PI_NAME_TYPE on ACT_HI_VARINST(PROC_INST_ID_, NAME_, VAR_TYPE_)
+  create index ACT_IDX_HI_INCIDENT_TENANT_ID on ACT_HI_INCIDENT(TENANT_ID_)
+  create index ACT_IDX_HI_INCIDENT_PROC_DEF_KEY on ACT_HI_INCIDENT(PROC_DEF_KEY_)
+  create index ACT_IDX_HI_INCIDENT_ROOT_PI on ACT_HI_INCIDENT(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_INCIDENT_PROCINST on ACT_HI_INCIDENT(PROC_INST_ID_)
+  create index ACT_IDX_HI_INCIDENT_RM_TIME on ACT_HI_INCIDENT(REMOVAL_TIME_)
+  create index ACT_IDX_HI_INCIDENT_CREATE_TIME on ACT_HI_INCIDENT(CREATE_TIME_)
+  create index ACT_IDX_HI_INCIDENT_END_TIME on ACT_HI_INCIDENT(END_TIME_)
+  create index ACT_IDX_HI_JOB_LOG_ROOT_PI on ACT_HI_JOB_LOG(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_JOB_LOG_PROCINST on ACT_HI_JOB_LOG(PROCESS_INSTANCE_ID_)
+  create index ACT_IDX_HI_JOB_LOG_PROCDEF on ACT_HI_JOB_LOG(PROCESS_DEF_ID_)
+  create index ACT_IDX_HI_JOB_LOG_TENANT_ID on ACT_HI_JOB_LOG(TENANT_ID_)
+  create index ACT_IDX_HI_JOB_LOG_JOB_DEF_ID on ACT_HI_JOB_LOG(JOB_DEF_ID_)
+  create index ACT_IDX_HI_JOB_LOG_PROC_DEF_KEY on ACT_HI_JOB_LOG(PROCESS_DEF_KEY_)
+  create index ACT_IDX_HI_JOB_LOG_EX_STACK on ACT_HI_JOB_LOG(JOB_EXCEPTION_STACK_ID_)
+  create index ACT_IDX_HI_JOB_LOG_RM_TIME on ACT_HI_JOB_LOG(REMOVAL_TIME_)
+  create index ACT_IDX_HI_JOB_LOG_JOB_CONF on ACT_HI_JOB_LOG(JOB_DEF_CONFIGURATION_)
+  create index ACT_HI_BAT_RM_TIME on ACT_HI_BATCH(REMOVAL_TIME_)
+  create index ACT_HI_EXT_TASK_LOG_ROOT_PI on ACT_HI_EXT_TASK_LOG(ROOT_PROC_INST_ID_)
+  create index ACT_HI_EXT_TASK_LOG_PROCINST on ACT_HI_EXT_TASK_LOG(PROC_INST_ID_)
+  create index ACT_HI_EXT_TASK_LOG_PROCDEF on ACT_HI_EXT_TASK_LOG(PROC_DEF_ID_)
+  create index ACT_HI_EXT_TASK_LOG_PROC_DEF_KEY on ACT_HI_EXT_TASK_LOG(PROC_DEF_KEY_)
+  create index ACT_HI_EXT_TASK_LOG_TENANT_ID on ACT_HI_EXT_TASK_LOG(TENANT_ID_)
+  create index ACT_IDX_HI_EXTTASKLOG_ERRORDET on ACT_HI_EXT_TASK_LOG(ERROR_DETAILS_ID_)
+  create index ACT_HI_EXT_TASK_LOG_RM_TIME on ACT_HI_EXT_TASK_LOG(REMOVAL_TIME_)
+  create index ACT_IDX_HI_OP_LOG_ROOT_PI on ACT_HI_OP_LOG(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_OP_LOG_PROCINST on ACT_HI_OP_LOG(PROC_INST_ID_)
+  create index ACT_IDX_HI_OP_LOG_PROCDEF on ACT_HI_OP_LOG(PROC_DEF_ID_)
+  create index ACT_IDX_HI_OP_LOG_TASK on ACT_HI_OP_LOG(TASK_ID_)
+  create index ACT_IDX_HI_OP_LOG_RM_TIME on ACT_HI_OP_LOG(REMOVAL_TIME_)
+  create index ACT_IDX_HI_OP_LOG_TIMESTAMP on ACT_HI_OP_LOG(TIMESTAMP_)
+  create index ACT_IDX_HI_OP_LOG_USER_ID on ACT_HI_OP_LOG(USER_ID_)
+  create index ACT_IDX_HI_OP_LOG_OP_TYPE on ACT_HI_OP_LOG(OPERATION_TYPE_)
+  create index ACT_IDX_HI_OP_LOG_ENTITY_TYPE on ACT_HI_OP_LOG(ENTITY_TYPE_)
+  create index ACT_IDX_HI_COMMENT_TASK on ACT_HI_COMMENT(TASK_ID_)
+  create index ACT_IDX_HI_COMMENT_ROOT_PI on ACT_HI_COMMENT(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_COMMENT_PROCINST on ACT_HI_COMMENT(PROC_INST_ID_)
+  create index ACT_IDX_HI_COMMENT_RM_TIME on ACT_HI_COMMENT(REMOVAL_TIME_)
+  create index ACT_IDX_HI_ATTACHMENT_CONTENT on ACT_HI_ATTACHMENT(CONTENT_ID_)
+  create index ACT_IDX_HI_ATTACHMENT_ROOT_PI on ACT_HI_ATTACHMENT(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_ATTACHMENT_PROCINST on ACT_HI_ATTACHMENT(PROC_INST_ID_)
+  create index ACT_IDX_HI_ATTACHMENT_TASK on ACT_HI_ATTACHMENT(TASK_ID_)
+  create index ACT_IDX_HI_ATTACHMENT_RM_TIME on ACT_HI_ATTACHMENT(REMOVAL_TIME_)
+]
+16:57:17.732 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'history' for component '{}' was successful. create
+16:57:17.760 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+16:57:17.760 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -- 
+-- 
+-- 
+-- 
+create table ACT_ID_GROUP ( 
+ID_ varchar(64), 
+REV_ integer, 
+NAME_ varchar(255), 
+TYPE_ varchar(255), 
+primary key (ID_) 
+)
+  create table ACT_ID_MEMBERSHIP ( 
+USER_ID_ varchar(64), 
+GROUP_ID_ varchar(64), 
+primary key (USER_ID_, GROUP_ID_) 
+)
+  create table ACT_ID_USER ( 
+ID_ varchar(64), 
+REV_ integer, 
+FIRST_ varchar(255), 
+LAST_ varchar(255), 
+EMAIL_ varchar(255), 
+PWD_ varchar(255), 
+SALT_ varchar(255), 
+LOCK_EXP_TIME_ timestamp, 
+ATTEMPTS_ integer, 
+PICTURE_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create table ACT_ID_INFO ( 
+ID_ varchar(64), 
+REV_ integer, 
+USER_ID_ varchar(64), 
+TYPE_ varchar(64), 
+KEY_ varchar(255), 
+VALUE_ varchar(255), 
+PASSWORD_ longvarbinary, 
+PARENT_ID_ varchar(255), 
+primary key (ID_) 
+)
+  create table ACT_ID_TENANT ( 
+ID_ varchar(64), 
+REV_ integer, 
+NAME_ varchar(255), 
+primary key (ID_) 
+)
+  create table ACT_ID_TENANT_MEMBER ( 
+ID_ varchar(64) not null, 
+TENANT_ID_ varchar(64) not null, 
+USER_ID_ varchar(64), 
+GROUP_ID_ varchar(64), 
+primary key (ID_) 
+)
+  alter table ACT_ID_MEMBERSHIP 
+add constraint ACT_FK_MEMB_GROUP 
+foreign key (GROUP_ID_) 
+references ACT_ID_GROUP
+  alter table ACT_ID_MEMBERSHIP 
+add constraint ACT_FK_MEMB_USER 
+foreign key (USER_ID_) 
+references ACT_ID_USER
+  alter table ACT_ID_TENANT_MEMBER 
+add constraint ACT_UNIQ_TENANT_MEMB_USER 
+unique (TENANT_ID_, USER_ID_)
+  alter table ACT_ID_TENANT_MEMBER 
+add constraint ACT_UNIQ_TENANT_MEMB_GROUP 
+unique (TENANT_ID_, GROUP_ID_)
+  alter table ACT_ID_TENANT_MEMBER 
+add constraint ACT_FK_TENANT_MEMB 
+foreign key (TENANT_ID_) 
+references ACT_ID_TENANT
+  alter table ACT_ID_TENANT_MEMBER 
+add constraint ACT_FK_TENANT_MEMB_USER 
+foreign key (USER_ID_) 
+references ACT_ID_USER
+  alter table ACT_ID_TENANT_MEMBER 
+add constraint ACT_FK_TENANT_MEMB_GROUP 
+foreign key (GROUP_ID_) 
+references ACT_ID_GROUP
+]
+16:57:17.761 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'identity' for component '{}' was successful. create
+16:57:17.792 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+16:57:17.793 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  create case definition table --
+  -- 
+-- 
+-- 
+-- 
+create table ACT_RE_CASE_DEF ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+CATEGORY_ varchar(255), 
+NAME_ varchar(255), 
+KEY_ varchar(255) NOT NULL, 
+VERSION_ integer NOT NULL, 
+DEPLOYMENT_ID_ varchar(64), 
+RESOURCE_NAME_ varchar(4000), 
+DGRM_RESOURCE_NAME_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+HISTORY_TTL_ integer, 
+primary key (ID_) 
+)
+  create case execution table --
+  create table ACT_RU_CASE_EXECUTION ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+CASE_INST_ID_ varchar(64), 
+SUPER_CASE_EXEC_ varchar(64), 
+SUPER_EXEC_ varchar(64), 
+BUSINESS_KEY_ varchar(255), 
+PARENT_ID_ varchar(64), 
+CASE_DEF_ID_ varchar(64), 
+ACT_ID_ varchar(255), 
+PREV_STATE_ integer, 
+CURRENT_STATE_ integer, 
+REQUIRED_ bit, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create case sentry part table --
+  create table ACT_RU_CASE_SENTRY_PART ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+CASE_INST_ID_ varchar(64), 
+CASE_EXEC_ID_ varchar(64), 
+SENTRY_ID_ varchar(255), 
+TYPE_ varchar(255), 
+SOURCE_CASE_EXEC_ID_ varchar(64), 
+STANDARD_EVENT_ varchar(255), 
+SOURCE_ varchar(255), 
+VARIABLE_EVENT_ varchar(255), 
+VARIABLE_NAME_ varchar(255), 
+SATISFIED_ bit, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create index on business key --
+  create index ACT_IDX_CASE_EXEC_BUSKEY on ACT_RU_CASE_EXECUTION(BUSINESS_KEY_)
+  create foreign key constraints on ACT_RU_CASE_EXECUTION --
+  alter table ACT_RU_CASE_EXECUTION 
+add constraint ACT_FK_CASE_EXE_CASE_INST 
+foreign key (CASE_INST_ID_) 
+references ACT_RU_CASE_EXECUTION
+  alter table ACT_RU_CASE_EXECUTION 
+add constraint ACT_FK_CASE_EXE_PARENT 
+foreign key (PARENT_ID_) 
+references ACT_RU_CASE_EXECUTION
+  alter table ACT_RU_CASE_EXECUTION 
+add constraint ACT_FK_CASE_EXE_CASE_DEF 
+foreign key (CASE_DEF_ID_) 
+references ACT_RE_CASE_DEF
+  create foreign key constraints on ACT_RU_VARIABLE --
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_CASE_EXE 
+foreign key (CASE_EXECUTION_ID_) 
+references ACT_RU_CASE_EXECUTION
+  alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_CASE_INST 
+foreign key (CASE_INST_ID_) 
+references ACT_RU_CASE_EXECUTION
+  create foreign key constraints on ACT_RU_TASK --
+  alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_CASE_EXE 
+foreign key (CASE_EXECUTION_ID_) 
+references ACT_RU_CASE_EXECUTION
+  alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_CASE_DEF 
+foreign key (CASE_DEF_ID_) 
+references ACT_RE_CASE_DEF
+  create foreign key constraints on ACT_RU_CASE_SENTRY_PART --
+  alter table ACT_RU_CASE_SENTRY_PART 
+add constraint ACT_FK_CASE_SENTRY_CASE_INST 
+foreign key (CASE_INST_ID_) 
+references ACT_RU_CASE_EXECUTION
+  alter table ACT_RU_CASE_SENTRY_PART 
+add constraint ACT_FK_CASE_SENTRY_CASE_EXEC 
+foreign key (CASE_EXEC_ID_) 
+references ACT_RU_CASE_EXECUTION
+  create index ACT_IDX_CASE_DEF_TENANT_ID on ACT_RE_CASE_DEF(TENANT_ID_)
+  create index ACT_IDX_CASE_EXEC_TENANT_ID on ACT_RU_CASE_EXECUTION(TENANT_ID_)
+]
+16:57:17.809 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'case.engine' for component '{}' was successful. create
+16:57:17.818 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+16:57:17.818 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -- 
+-- 
+-- 
+-- 
+create table ACT_HI_CASEINST ( 
+ID_ varchar(64) not null, 
+CASE_INST_ID_ varchar(64) not null, 
+BUSINESS_KEY_ varchar(255), 
+CASE_DEF_ID_ varchar(64) not null, 
+CREATE_TIME_ timestamp not null, 
+CLOSE_TIME_ timestamp, 
+DURATION_ bigint, 
+STATE_ integer, 
+CREATE_USER_ID_ varchar(255), 
+SUPER_CASE_INSTANCE_ID_ varchar(64), 
+SUPER_PROCESS_INSTANCE_ID_ varchar(64), 
+TENANT_ID_ varchar(64), 
+primary key (ID_), 
+unique (CASE_INST_ID_) 
+)
+  create table ACT_HI_CASEACTINST ( 
+ID_ varchar(64) not null, 
+PARENT_ACT_INST_ID_ varchar(64), 
+CASE_DEF_ID_ varchar(64) not null, 
+CASE_INST_ID_ varchar(64) not null, 
+CASE_ACT_ID_ varchar(255) not null, 
+TASK_ID_ varchar(64), 
+CALL_PROC_INST_ID_ varchar(64), 
+CALL_CASE_INST_ID_ varchar(64), 
+CASE_ACT_NAME_ varchar(255), 
+CASE_ACT_TYPE_ varchar(255), 
+CREATE_TIME_ timestamp not null, 
+END_TIME_ timestamp, 
+DURATION_ bigint, 
+STATE_ integer, 
+REQUIRED_ bit, 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create index ACT_IDX_HI_CAS_I_CLOSE on ACT_HI_CASEINST(CLOSE_TIME_)
+  create index ACT_IDX_HI_CAS_I_BUSKEY on ACT_HI_CASEINST(BUSINESS_KEY_)
+  create index ACT_IDX_HI_CAS_I_TENANT_ID on ACT_HI_CASEINST(TENANT_ID_)
+  create index ACT_IDX_HI_CAS_A_I_CREATE on ACT_HI_CASEACTINST(CREATE_TIME_)
+  create index ACT_IDX_HI_CAS_A_I_END on ACT_HI_CASEACTINST(END_TIME_)
+  create index ACT_IDX_HI_CAS_A_I_COMP on ACT_HI_CASEACTINST(CASE_ACT_ID_, END_TIME_, ID_)
+  create index ACT_IDX_HI_CAS_A_I_TENANT_ID on ACT_HI_CASEACTINST(TENANT_ID_)
+]
+16:57:17.834 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'case.history' for component '{}' was successful. create
+16:57:17.842 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+16:57:17.842 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  create decision definition table --
+  -- 
+-- 
+-- 
+-- 
+create table ACT_RE_DECISION_DEF ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+CATEGORY_ varchar(255), 
+NAME_ varchar(255), 
+KEY_ varchar(255) NOT NULL, 
+VERSION_ integer NOT NULL, 
+DEPLOYMENT_ID_ varchar(64), 
+RESOURCE_NAME_ varchar(4000), 
+DGRM_RESOURCE_NAME_ varchar(4000), 
+DEC_REQ_ID_ varchar(64), 
+DEC_REQ_KEY_ varchar(255), 
+TENANT_ID_ varchar(64), 
+HISTORY_TTL_ integer, 
+VERSION_TAG_ varchar(64), 
+primary key (ID_) 
+)
+  create decision requirements definition table --
+  create table ACT_RE_DECISION_REQ_DEF ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+CATEGORY_ varchar(255), 
+NAME_ varchar(255), 
+KEY_ varchar(255) NOT NULL, 
+VERSION_ integer NOT NULL, 
+DEPLOYMENT_ID_ varchar(64), 
+RESOURCE_NAME_ varchar(4000), 
+DGRM_RESOURCE_NAME_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  alter table ACT_RE_DECISION_DEF 
+add constraint ACT_FK_DEC_REQ 
+foreign key (DEC_REQ_ID_) 
+references ACT_RE_DECISION_REQ_DEF(ID_)
+  create index ACT_IDX_DEC_DEF_TENANT_ID on ACT_RE_DECISION_DEF(TENANT_ID_)
+  create index ACT_IDX_DEC_DEF_REQ_ID on ACT_RE_DECISION_DEF(DEC_REQ_ID_)
+  create index ACT_IDX_DEC_REQ_DEF_TENANT_ID on ACT_RE_DECISION_REQ_DEF(TENANT_ID_)
+]
+16:57:17.850 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'decision.engine' for component '{}' was successful. create
+16:57:17.876 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+16:57:17.876 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03062 Executing Schmema DDL [
+  Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+  under one or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information regarding copyright
+  ownership. Camunda licenses this file to you under the Apache License,
+  Version 2.0; you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  create history decision instance table --
+  -- 
+-- 
+-- 
+-- 
+create table ACT_HI_DECINST ( 
+ID_ varchar(64) NOT NULL, 
+DEC_DEF_ID_ varchar(64) NOT NULL, 
+DEC_DEF_KEY_ varchar(255) NOT NULL, 
+DEC_DEF_NAME_ varchar(255), 
+PROC_DEF_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+CASE_DEF_KEY_ varchar(255), 
+CASE_DEF_ID_ varchar(64), 
+CASE_INST_ID_ varchar(64), 
+ACT_INST_ID_ varchar(64), 
+ACT_ID_ varchar(255), 
+EVAL_TIME_ timestamp not null, 
+REMOVAL_TIME_ timestamp, 
+COLLECT_VALUE_ double, 
+USER_ID_ varchar(255), 
+ROOT_DEC_INST_ID_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+DEC_REQ_ID_ varchar(64), 
+DEC_REQ_KEY_ varchar(255), 
+TENANT_ID_ varchar(64), 
+primary key (ID_) 
+)
+  create history decision input table --
+  create table ACT_HI_DEC_IN ( 
+ID_ varchar(64) NOT NULL, 
+DEC_INST_ID_ varchar(64) NOT NULL, 
+CLAUSE_ID_ varchar(64), 
+CLAUSE_NAME_ varchar(255), 
+VAR_TYPE_ varchar(100), 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+CREATE_TIME_ timestamp, 
+ROOT_PROC_INST_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create history decision output table --
+  create table ACT_HI_DEC_OUT ( 
+ID_ varchar(64) NOT NULL, 
+DEC_INST_ID_ varchar(64) NOT NULL, 
+CLAUSE_ID_ varchar(64), 
+CLAUSE_NAME_ varchar(255), 
+RULE_ID_ varchar(64), 
+RULE_ORDER_ integer, 
+VAR_NAME_ varchar(255), 
+VAR_TYPE_ varchar(100), 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+TENANT_ID_ varchar(64), 
+CREATE_TIME_ timestamp, 
+ROOT_PROC_INST_ID_ varchar(64), 
+REMOVAL_TIME_ timestamp, 
+primary key (ID_) 
+)
+  create index ACT_IDX_HI_DEC_INST_ID on ACT_HI_DECINST(DEC_DEF_ID_)
+  create index ACT_IDX_HI_DEC_INST_KEY on ACT_HI_DECINST(DEC_DEF_KEY_)
+  create index ACT_IDX_HI_DEC_INST_PI on ACT_HI_DECINST(PROC_INST_ID_)
+  create index ACT_IDX_HI_DEC_INST_CI on ACT_HI_DECINST(CASE_INST_ID_)
+  create index ACT_IDX_HI_DEC_INST_ACT on ACT_HI_DECINST(ACT_ID_)
+  create index ACT_IDX_HI_DEC_INST_ACT_INST on ACT_HI_DECINST(ACT_INST_ID_)
+  create index ACT_IDX_HI_DEC_INST_TIME on ACT_HI_DECINST(EVAL_TIME_)
+  create index ACT_IDX_HI_DEC_INST_TENANT_ID on ACT_HI_DECINST(TENANT_ID_)
+  create index ACT_IDX_HI_DEC_INST_ROOT_ID on ACT_HI_DECINST(ROOT_DEC_INST_ID_)
+  create index ACT_IDX_HI_DEC_INST_REQ_ID on ACT_HI_DECINST(DEC_REQ_ID_)
+  create index ACT_IDX_HI_DEC_INST_REQ_KEY on ACT_HI_DECINST(DEC_REQ_KEY_)
+  create index ACT_IDX_HI_DEC_INST_ROOT_PI on ACT_HI_DECINST(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_DEC_INST_RM_TIME on ACT_HI_DECINST(REMOVAL_TIME_)
+  create index ACT_IDX_HI_DEC_IN_INST on ACT_HI_DEC_IN(DEC_INST_ID_)
+  create index ACT_IDX_HI_DEC_IN_CLAUSE on ACT_HI_DEC_IN(DEC_INST_ID_, CLAUSE_ID_)
+  create index ACT_IDX_HI_DEC_IN_ROOT_PI on ACT_HI_DEC_IN(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_DEC_IN_RM_TIME on ACT_HI_DEC_IN(REMOVAL_TIME_)
+  create index ACT_IDX_HI_DEC_OUT_INST on ACT_HI_DEC_OUT(DEC_INST_ID_)
+  create index ACT_IDX_HI_DEC_OUT_RULE on ACT_HI_DEC_OUT(RULE_ORDER_, CLAUSE_ID_)
+  create index ACT_IDX_HI_DEC_OUT_ROOT_PI on ACT_HI_DEC_OUT(ROOT_PROC_INST_ID_)
+  create index ACT_IDX_HI_DEC_OUT_RM_TIME on ACT_HI_DEC_OUT(REMOVAL_TIME_)
+]
+16:57:17.877 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03Database schema operation 'decision.history' for component '{}' was successful. create
+16:57:17.878 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13011 closing existing command context
+16:57:17.878 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 firing event committing...
+16:57:17.878 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 committing the persistence session...
+16:57:17.879 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 firing event committed...
+16:57:17.880 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.881 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.881 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 429878635 to pool.
+16:57:17.883 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- SchemaOperationsProcessEngineBuild ----------------------
+16:57:17.883 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- HistoryLevelSetupCommand ----------------------
+16:57:17.883 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13009 opening new command context
+16:57:17.900 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+16:57:17.900 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 429878635 from pool.
+16:57:17.901 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.905 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:17.933 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: startup.lock(String)
+16:57:17.966 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 1
+16:57:17.968 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:17.969 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: historyLevel(String)
+16:57:17.970 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:17.970 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03106 No exclusive lock is acquired on CockroachDB or H2, as pessimistic locks are disabled on these databases.
+16:57:17.971 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:17.972 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: historyLevel(String)
+16:57:17.976 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:17.976 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+16:57:17.977 [Test worker] INFO org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+16:57:17.978 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13011 closing existing command context
+16:57:17.980 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03006 Cache state after flush: [
+  PERSISTENT PropertyEntity[startup.lock]
+  PERSISTENT PropertyEntity[historyLevel]
+]
+16:57:17.982 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03008 Flush Summary: [
+  INSERT PropertyEntity[historyLevel]
+]
+16:57:17.986 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03009 SQL operation: 'INSERT'; Entity: 'PropertyEntity[id=historyLevel]'
+16:57:17.987 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.insertProperty - ==&gt;  Preparing: insert into ACT_GE_PROPERTY ( NAME_, VALUE_, REV_ ) values ( ?, ?, 1 )
+16:57:17.988 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.insertProperty - ==&gt; Parameters: historyLevel(String), 3(String)
+16:57:17.992 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 firing event committing...
+16:57:17.992 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 committing the persistence session...
+16:57:17.992 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.992 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 firing event committed...
+16:57:17.993 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.993 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:17.993 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 429878635 to pool.
+16:57:17.993 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- HistoryLevelSetupCommand ----------------------
+16:57:17.993 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- BootstrapEngineCommand ----------------------
+16:57:17.993 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13009 opening new command context
+16:57:17.993 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+16:57:17.993 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 429878635 from pool.
+16:57:17.993 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:18.000 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.000 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: installationId.lock(String)
+16:57:18.001 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 1
+16:57:18.001 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.002 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: camunda.installation.id(String)
+16:57:18.003 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:18.004 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03106 No exclusive lock is acquired on CockroachDB or H2, as pessimistic locks are disabled on these databases.
+16:57:18.004 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.004 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: camunda.installation.id(String)
+16:57:18.005 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:18.005 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03096 No installation id property found in database
+16:57:18.005 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03097 Creating the installation id property in database with the value: fbd5b44b-03ab-455a-b07c-dd6dd98993a5
+16:57:18.005 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.007 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: deployment.lock(String)
+16:57:18.008 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 1
+16:57:18.009 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.009 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: history.cleanup.job.lock(String)
+16:57:18.010 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 1
+16:57:18.011 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- GetTableMetaDataCmd ----------------------
+16:57:18.011 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13010 reusing existing command context
+16:57:18.073 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- GetTableMetaDataCmd ----------------------
+16:57:18.075 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- HistoryCleanupCmd ----------------------
+16:57:18.076 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13010 reusing existing command context
+16:57:18.076 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13038 History cleanup won't be scheduled. Either configure batch window or call it with immediatelyDue = true.
+16:57:18.078 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.JobEntity.selectJobsByHandlerType - ==&gt;  Preparing: select * from ACT_RU_JOB where HANDLER_TYPE_ = ?
+16:57:18.079 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.JobEntity.selectJobsByHandlerType - ==&gt; Parameters: history-cleanup(String)
+16:57:18.080 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.JobEntity.selectJobsByHandlerType - &lt;==      Total: 0
+16:57:18.082 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- HistoryCleanupCmd ----------------------
+16:57:18.082 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.083 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: telemetry.lock(String)
+16:57:18.084 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 1
+16:57:18.084 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03106 No exclusive lock is acquired on CockroachDB or H2, as pessimistic locks are disabled on these databases.
+16:57:18.085 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.085 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: camunda.telemetry.enabled(String)
+16:57:18.086 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:18.087 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.088 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: camunda.telemetry.initial.message.sent(String)
+16:57:18.088 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:18.088 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03092 No telemetry property found in the database
+16:57:18.089 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03093 Creating the telemetry property in database with the value: null
+16:57:18.089 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03095 Error while configurting the telemetry property: null
+16:57:18.090 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- GetLicenseKeyCmd ----------------------
+16:57:18.090 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13010 reusing existing command context
+16:57:18.091 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.091 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: camunda-license-key-id(String)
+16:57:18.092 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:18.092 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt;  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+16:57:18.101 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - ==&gt; Parameters: camunda-license-key(String)
+16:57:18.102 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty - &lt;==      Total: 0
+16:57:18.102 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- GetLicenseKeyCmd ----------------------
+16:57:18.114 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13005 Starting command -------------------- IsTelemetryEnabledCmd ----------------------
+16:57:18.114 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13010 reusing existing command context
+16:57:18.114 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- IsTelemetryEnabledCmd ----------------------
+16:57:18.114 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13011 closing existing command context
+16:57:18.115 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03006 Cache state after flush: [
+  PERSISTENT PropertyEntity[camunda.telemetry.enabled]
+  PERSISTENT PropertyEntity[installationId.lock]
+  PERSISTENT PropertyEntity[telemetry.lock]
+  PERSISTENT PropertyEntity[camunda.installation.id]
+  PERSISTENT PropertyEntity[deployment.lock]
+  PERSISTENT PropertyEntity[history.cleanup.job.lock]
+]
+16:57:18.115 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03008 Flush Summary: [
+  INSERT PropertyEntity[camunda.installation.id]
+  INSERT PropertyEntity[camunda.telemetry.enabled]
+]
+16:57:18.115 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03009 SQL operation: 'INSERT'; Entity: 'PropertyEntity[id=camunda.installation.id]'
+16:57:18.115 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.insertProperty - ==&gt;  Preparing: insert into ACT_GE_PROPERTY ( NAME_, VALUE_, REV_ ) values ( ?, ?, 1 )
+16:57:18.116 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.insertProperty - ==&gt; Parameters: camunda.installation.id(String), fbd5b44b-03ab-455a-b07c-dd6dd98993a5(String)
+16:57:18.116 [Test worker] DEBUG org.camunda.bpm.engine.persistence - ENGINE-03009 SQL operation: 'INSERT'; Entity: 'PropertyEntity[id=camunda.telemetry.enabled]'
+16:57:18.116 [Test worker] DEBUG org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.insertProperty - ==&gt; Parameters: camunda.telemetry.enabled(String), null(String)
+16:57:18.116 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 firing event committing...
+16:57:18.117 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 committing the persistence session...
+16:57:18.117 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:18.117 [Test worker] DEBUG org.camunda.bpm.engine.tx - ENGINE-11002 firing event committed...
+16:57:18.117 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:18.117 [Test worker] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [conn0: url=jdbc:h2:mem:camunda user=SA]
+16:57:18.117 [Test worker] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 429878635 to pool.
+16:57:18.117 [Test worker] DEBUG org.camunda.bpm.engine.cmd - ENGINE-13006 Finishing command -------------------- BootstrapEngineCommand ----------------------
+16:57:18.117 [Test worker] INFO org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+16:57:18.153 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+2021-04-10 16:57:18.464  INFO 22483 --- [    Test worker] o.s.nativex.NativeListener               : This application is bootstrapped with code generated with Spring AOT
+
+ ____                                 _         ____  _       _    __                      
+/ ___| __ _ _ __ ___  _   _ _ __   __| | __ _  |  _ \| | __ _| |_ / _| ___  _ __ _ __ ___  
+| |   / _` | '_ ` _ \| | | | '_ \ / _` |/ _` | | |_) | |/ _` | __| |_ / _ \| '__| '_ ` _ \ 
+| |__| (_| | | | | | | |_| | | | | (_| | (_| | |  __/| | (_| | |_|  _| (_) | |  | | | | | |
+\____/\__,_|_| |_| |_|\__,_|_| |_|\__,_|\__,_| |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
+
+  Spring-Boot:  (v2.4.4)
+  Camunda Platform: (v7.15.0)
+  Camunda Platform Spring Boot Starter: (v7.15.0)
+
+2021-04-10 16:57:18.551  INFO 22483 --- [    Test worker] c.order.process.ProcessApplicationTests  : Starting ProcessApplicationTests using Java 11.0.8 on PM04318L with PID 22483 (started by pablo in /home/pablo/Downloads/process)
+2021-04-10 16:57:18.553  INFO 22483 --- [    Test worker] c.order.process.ProcessApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 16:57:19.908  INFO 22483 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e56408be-391f-40bb-bb98-5de60a66f01f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2021-04-10 16:57:19.977  INFO 22483 --- [    Test worker] org.camunda.bpm.spring.boot              : STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-04-10 16:57:19.988  INFO 22483 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'camundaTaskExecutor'
+2021-04-10 16:57:20.209  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.cfg               : ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-04-10 16:57:21.397  WARN 22483 --- [    Test worker] s.b.s.c.i.DefaultDeploymentConfiguration : unable to determine if resource URL [jar:file:/home/pablo/.gradle/caches/modules-2/files-2.1/org.camunda.bpm.dmn/camunda-engine-dmn/7.15.0/bbe1f492676ae406f42550cd19e66e86f6bcb756/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-04-10 16:57:21.397  WARN 22483 --- [    Test worker] s.b.s.c.i.DefaultDeploymentConfiguration : unable to determine if resource URL [jar:file:/home/pablo/.gradle/caches/modules-2/files-2.1/org.camunda.bpm.dmn/camunda-engine-feel-juel/7.15.0/ac9e57dc9cf6c36d015786e4df5157585429f4f8/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-04-10 16:57:21.398  WARN 22483 --- [    Test worker] s.b.s.c.i.DefaultDeploymentConfiguration : unable to determine if resource URL [jar:file:/home/pablo/.gradle/caches/modules-2/files-2.1/org.camunda.bpm.dmn/camunda-engine-feel-scala/7.15.0/26179c3f14308ed5ced5df52fc0357ec56c250f7/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-04-10 16:57:21.398  WARN 22483 --- [    Test worker] s.b.s.c.i.DefaultDeploymentConfiguration : unable to determine if resource URL [jar:file:/home/pablo/.gradle/caches/modules-2/files-2.1/org.camunda.bpm.dmn/camunda-engine-feel-api/7.15.0/affe26009b7c79e8104588cf04407c00c59fec51/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-04-10 16:57:21.398  INFO 22483 --- [    Test worker] org.camunda.bpm.spring.boot              : STARTER-SB021 Auto-Deploying resources: [file [/home/pablo/Downloads/process/build/resources/main/confirmar-estoque.bpmn]]
+2021-04-10 16:57:21.399  INFO 22483 --- [    Test worker] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-04-10 16:57:21.399  INFO 22483 --- [    Test worker] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-003: Task events will be published as Spring Events.
+2021-04-10 16:57:21.399  INFO 22483 --- [    Test worker] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-005: Execution events will be published as Spring Events.
+2021-04-10 16:57:21.401  INFO 22483 --- [    Test worker] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-007: History events will be published as Spring events.
+2021-04-10 16:57:21.405  INFO 22483 --- [    Test worker] org.camunda.spin                         : SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-04-10 16:57:21.543  INFO 22483 --- [    Test worker] org.camunda.spin                         : SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-04-10 16:57:21.554  INFO 22483 --- [    Test worker] org.camunda.spin                         : SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-04-10 16:57:21.554  INFO 22483 --- [    Test worker] org.camunda.spin                         : SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-04-10 16:57:21.557  INFO 22483 --- [    Test worker] org.camunda.bpm.dmn.feel.scala           : FEEL/SCALA-01001 Spin value mapper detected
+2021-04-10 16:57:21.557  INFO 22483 --- [    Test worker] org.camunda.feel.FeelEngine              : Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@a77a5f7, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@1448fc69)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@2458aee2, clock: SystemClock, configuration: Configuration(false)]
+2021-04-10 16:57:24.017  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-04-10 16:57:24.064  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-04-10 16:57:24.080  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-04-10 16:57:24.095  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-04-10 16:57:24.101  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-04-10 16:57:24.106  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-04-10 16:57:24.116  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-04-10 16:57:24.119  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03067 No history level property found in database
+2021-04-10 16:57:24.119  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.persistence       : ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-04-10 16:57:24.143  INFO 22483 --- [    Test worker] org.camunda.bpm.engine                   : ENGINE-00001 Process Engine default created.
+2021-04-10 16:57:24.292  INFO 22483 --- [    Test worker] org.camunda.bpm.spring.boot              : STARTER-SB010 creating initial Admin User: AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]
+2021-04-10 16:57:24.917  INFO 22483 --- [    Test worker] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Configuring camunda rest api.
+2021-04-10 16:57:24.942  INFO 22483 --- [    Test worker] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Finished configuring camunda rest api.
+2021-04-10 16:57:26.165  INFO 22483 --- [    Test worker] c.order.process.ProcessApplicationTests  : Started ProcessApplicationTests in 7.979 seconds (JVM running for 15.893)
+2021-04-10 16:57:26.169  INFO 22483 --- [    Test worker] org.camunda.bpm.engine.jobexecutor       : ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2021-04-10 16:57:26.172  INFO 22483 --- [ingJobExecutor]] org.camunda.bpm.engine.jobexecutor       : ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+100
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at Apr 10, 2021, 4:57:27 PM</p>
+</div>
+</div>
+</body>
+</html>
