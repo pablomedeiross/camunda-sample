@@ -21,10 +21,6 @@ class OrderProcessMapper {
 
     OrderProcess mapToOrderProcess(String contextId, Map<String, Object> variables) {
 
-        if ( variables.isEmpty() ) {
-            return null;
-        }
-
         String productId = (String) variables.get(Variable.PRODUCT_ID.getName());
         boolean available = (boolean) variables.get(Variable.AVAILABLE.getName());
         boolean success = (boolean) variables.get(Variable.SUCCESS.getName());

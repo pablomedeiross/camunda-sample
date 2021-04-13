@@ -25,13 +25,12 @@ class OrderProcessorRuntimeStarter implements OrderProcessorStarter {
     @Override
     public String start(String productId) {
 
-       ProcessInstance instance = runtimeService
+       return runtimeService
                 .createProcessInstanceByKey(processKey)
                 .setVariable(Variable.PRODUCT_ID.getName(), productId)
                 .setVariable(Variable.AVAILABLE.getName(), false)
                 .setVariable(Variable.SUCCESS.getName(), false)
-                .execute();
-
-       return instance.getProcessInstanceId();
+                .execute()
+               .getProcessInstanceId();
     }
 }

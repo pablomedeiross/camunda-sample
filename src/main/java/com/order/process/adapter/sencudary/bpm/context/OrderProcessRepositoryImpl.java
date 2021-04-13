@@ -22,7 +22,8 @@ class OrderProcessRepositoryImpl implements OrderProcessRepository {
     @Override
     public void save(OrderProcess orderProcess) {
 
-        runtimeService
+        this
+                .runtimeService
                 .setVariables(
                         orderProcess.getId(),
                         mapper.mapToVariables(orderProcess)
@@ -42,7 +43,8 @@ class OrderProcessRepositoryImpl implements OrderProcessRepository {
 
         Map<String, Object> variablesMap = new HashMap<>();
 
-        historyService
+        this
+                .historyService
                 .createHistoricVariableInstanceQuery()
                 .processInstanceId(id)
                 .matchVariableNamesIgnoreCase()
