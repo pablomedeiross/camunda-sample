@@ -2,6 +2,6 @@ package com.order.process.model;
 
 public interface ProductRepository {
 
-    boolean productExists();
+    boolean productExists(String id);
 
 }

@@ -9,7 +9,7 @@ import java.util.Map;
 @Component
 class OrderProcessMapper {
 
-    Map<String, Object> mapToVariables(OrderProcess orderProcess) {
+    Map<String, Object> orderProcessToVariablesMap(OrderProcess orderProcess) {
 
         Map<String, Object> map = new HashMap<>();
         map.put(Variable.PRODUCT_ID.getName(), orderProcess.getIdProduct());

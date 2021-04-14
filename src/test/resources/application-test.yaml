@@ -1,7 +1,7 @@
 process-key: "confirmacao-disponibilidade-produto"
 
 product-api:
-  baseurl: http://localhost:8081/v1/
+  baseurl: http://localhost:${wiremock.server.port:defaultValue}/v1/
 
 camunda.bpm.admin-user:
   id: demo

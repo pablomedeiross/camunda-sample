@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("v1/orders-process")
 public class OrderProcessController {
 
-    @Autowired
-    private OrderProcessService service;
-
+    @Autowired private OrderProcessService service;
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<OrderProcess> get(@PathVariable("id") String id) {

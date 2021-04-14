@@ -26,7 +26,7 @@ class OrderProcessRepositoryImpl implements OrderProcessRepository {
                 .runtimeService
                 .setVariables(
                         orderProcess.getId(),
-                        mapper.mapToVariables(orderProcess)
+                        mapper.orderProcessToVariablesMap(orderProcess)
                 );
     }
 

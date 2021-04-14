@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/products/1243"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": { "exist": true },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

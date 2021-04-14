@@ -1,6 +1,5 @@
 package com.order.process.model;
 
-
 import lombok.*;
 
 @Builder

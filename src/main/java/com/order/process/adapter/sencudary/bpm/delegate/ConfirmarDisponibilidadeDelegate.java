@@ -16,7 +16,7 @@ class ConfirmarDisponibilidadeDelegate implements JavaDelegate {
     }
 
     @Override
-    public void execute(DelegateExecution execution) throws InterruptedException {
+    public void execute(DelegateExecution execution) {
         service.confirmInStock(execution.getProcessInstanceId());
     }
 }

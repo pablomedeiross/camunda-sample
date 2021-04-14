@@ -26,7 +26,8 @@ class OrderProcessServiceImpl implements OrderProcessService {
     @Override
     public void confirmInStock(String idOrderProcess) {
 
-        OrderProcess orderProcess = orderProcessRepository.findById(idOrderProcess);
+        OrderProcess orderProcess =
+                orderProcessRepository.findById(idOrderProcess);
 
         if(orderProcess == null) {
             throw new OrderProcessDontExists();
@@ -39,7 +40,7 @@ class OrderProcessServiceImpl implements OrderProcessService {
     @Override
     public String startOrderProcess(String productId) {
 
-        if (!productRepository.productExists())
+        if (!productRepository.productExists(productId))
             throw new ProductDontExists();
 
         return startOrderProcessor.start(productId);
